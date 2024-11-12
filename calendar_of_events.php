@@ -1,38 +1,34 @@
-<?php  include('header.php'); ?>
-<?php  include('session.php'); ?>
-    <body>
-		<?php include('navbar.php') ?>
+<?php include('header_dashboard.php'); ?>
+    <body id="class_div">
+		<?php include('navbar_about.php'); ?>
         <div class="container-fluid">
             <div class="row-fluid">
-					<?php include('sidebar_calendar.php'); ?>
-                
-                <!--/span-->
-                <div class="span9" id="content">
-								        <div id="block_bg" class="block">
-                
-								<div class="block-content collapse in">
-										<div class="span8">
-							<!-- block -->
-										<div class="navbar navbar-inner block-header">
-											<div class="muted pull-left">Calendar</div>
-										</div>
-															<div id='calendar'></div>		
-										</div>
-										
-										<div class="span4">
-												<?php include('add_class_event.php'); ?>
-										</div>	
-							<!-- block -->
-						
-										</div>
-                                </div>		
+                <div class="span12" id="content">
+                     <div class="row-fluid">
+                        <!-- block -->
+                        <div class="block">
+								<div class="navbar navbar-inner block-header">
+									<div id="" class="muted pull-right"><a href="index.php"><i class="icon-arrow-left"></i> Back</a></div>
+								</div>
+                            <div class="block-content collapse in">
+                                <div class="span12">
+
+										<?php
+											$mission_query = mysqli_query($conn,"select * from content where title  = 'Calendar' ")or die(mysqli_error());
+											$mission_row = mysqli_fetch_array($mission_query);
+											echo $mission_row['content'];
+										?>
+								<hr>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /block -->
+                    </div>
                 </div>
             </div>
-    
-         <?php include('footer.php'); ?>
+		<?php include('footer.php'); ?>
         </div>
-	<?php include('script.php'); ?>
-	<?php include('admin_calendar_script.php'); ?>
+		<?php include('script.php'); ?>
     </body>
-
 </html>
