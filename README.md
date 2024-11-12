@@ -1,4 +1,4 @@
-# Kabale University eLearning Platform
+hi# Kabale University eLearning Platform
 
 ## Overview
 The **Kabale University eLearning Platform** is an online learning management system designed to provide students and faculty with an intuitive platform to engage in virtual learning. The platform supports online course management, content sharing, student assessments, communication tools, and more. It aims to improve access to education, particularly for students at Kabale University and beyond, by offering a user-friendly environment for learning and teaching.
@@ -18,33 +18,11 @@ The **Kabale University eLearning Platform** is an online learning management sy
   - HTML5, CSS3, JavaScript (React.js, Vue.js or Angular)
   - Bootstrap/Tailwind CSS (for responsive design)
   
-- **Backend**:
-  - Node.js with Express.js
-  - Python (Django or Flask) for specific components
-  - PHP with Laravel (optional based on tech preference)
-  
 - **Database**:
   - MySQL / PostgreSQL (Relational Database Management System)
   - MongoDB (for handling non-relational data, optional)
 
-- **Authentication**:
-  - JWT (JSON Web Tokens) for secure authentication
-  - OAuth2 (optional for Google/SSO integration)
 
-- **Hosting/Cloud Services**:
-  - AWS, Azure, or Google Cloud for hosting
-  - Firebase (for real-time notifications and messaging)
-  
-- **Version Control**:
-  - Git (for code versioning)
-  - GitHub, GitLab, or Bitbucket (for code repositories)
-
-## Installation & Setup
-
-### Prerequisites
-- **Node.js**: Install the latest stable version of [Node.js](https://nodejs.org/)
-- **npm**: Comes with Node.js installation
-- **Database**: MySQL/PostgreSQL running on localhost or remote server
 
 ### Backend Setup
 1. Clone the repository:
