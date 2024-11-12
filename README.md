@@ -11,16 +11,10 @@ The **Kabale University eLearning Platform** is an online learning management sy
 - **Messaging System**: In-platform communication between students and instructors.
 - **Multi-device Support**: Access the platform from computers, tablets, or smartphones.
 - **Student Profiles**: Manage personal information, enrollment status, and academic progress.
-- **Notifications**: Stay updated with reminders for assignments, grades, or announcements.
+- **Notifications**: Stay updated with reminders for assignments, grades, or announcement 
 
-## Tech Stack
-- **Frontend**: 
-  - HTML5, CSS3, JavaScript (React.js, Vue.js or Angular)
-  - Bootstrap/Tailwind CSS (for responsive design)
-  
-- **Database**:
-  - MySQL / PostgreSQL (Relational Database Management System)
-  - MongoDB (for handling non-relational data, optional)
+- **Designer and programed by**: Derrick Abaho lagolas 
+
 
 
 
@@ -28,7 +22,7 @@ The **Kabale University eLearning Platform** is an online learning management sy
 1. Clone the repository:
    ```bash
    git clone https://github.com/username/kabale-university-elearning.git
-   cd kabale-university-elearning
+   cd kabale-university-e-learning
 npm install
 DB_HOST=localhost
 DB_USER=root
