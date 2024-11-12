@@ -1,110 +1,63 @@
-# Flot [![Build status](https://travis-ci.org/flot/flot.png)](https://travis-ci.org/flot/flot)
+# Kabale University eLearning Platform
 
-## About ##
+## Overview
+The **Kabale University eLearning Platform** is an online learning management system designed to provide students and faculty with an intuitive platform to engage in virtual learning. The platform supports online course management, content sharing, student assessments, communication tools, and more. It aims to improve access to education, particularly for students at Kabale University and beyond, by offering a user-friendly environment for learning and teaching.
 
-Flot is a Javascript plotting library for jQuery.  
-Read more at the website: <http://www.flotcharts.org/>
+## Features
+- **Student Dashboard**: View course progress, upcoming assignments, grades, and announcements.
+- **Course Management**: Faculty can create, manage, and organize courses with content like lectures, assignments, quizzes, and multimedia.
+- **Discussion Forums**: Students and instructors can engage in course-related discussions.
+- **Online Assessments**: Administer quizzes, exams, and assignments with automated grading.
+- **Messaging System**: In-platform communication between students and instructors.
+- **Multi-device Support**: Access the platform from computers, tablets, or smartphones.
+- **Student Profiles**: Manage personal information, enrollment status, and academic progress.
+- **Notifications**: Stay updated with reminders for assignments, grades, or announcements.
 
-Take a look at the the examples in examples/index.html; they should give a good
-impression of what Flot can do, and the source code of the examples is probably
-the fastest way to learn how to use Flot.
+## Tech Stack
+- **Frontend**: 
+  - HTML5, CSS3, JavaScript (React.js, Vue.js or Angular)
+  - Bootstrap/Tailwind CSS (for responsive design)
+  
+- **Backend**:
+  - Node.js with Express.js
+  - Python (Django or Flask) for specific components
+  - PHP with Laravel (optional based on tech preference)
+  
+- **Database**:
+  - MySQL / PostgreSQL (Relational Database Management System)
+  - MongoDB (for handling non-relational data, optional)
 
+- **Authentication**:
+  - JWT (JSON Web Tokens) for secure authentication
+  - OAuth2 (optional for Google/SSO integration)
 
-## Installation ##
+- **Hosting/Cloud Services**:
+  - AWS, Azure, or Google Cloud for hosting
+  - Firebase (for real-time notifications and messaging)
+  
+- **Version Control**:
+  - Git (for code versioning)
+  - GitHub, GitLab, or Bitbucket (for code repositories)
 
-Just include the Javascript file after you've included jQuery.
+## Installation & Setup
 
-Generally, all browsers that support the HTML5 canvas tag are
-supported.
+### Prerequisites
+- **Node.js**: Install the latest stable version of [Node.js](https://nodejs.org/)
+- **npm**: Comes with Node.js installation
+- **Database**: MySQL/PostgreSQL running on localhost or remote server
 
-For support for Internet Explorer < 9, you can use [Excanvas]
-[excanvas], a canvas emulator; this is used in the examples bundled
-with Flot. You just include the excanvas script like this:
+### Backend Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/username/kabale-university-elearning.git
+   cd kabale-university-elearning
+npm install
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=yourpassword
+DB_NAME=elearning
+JWT_SECRET=your_jwt_secret_key
 
-```html
-<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="excanvas.min.js"></script><![endif]-->
-```
+### What was updated:
+- The **Acknowledgments** section now includes the design credit for **Derrick Abaho**, a second-year student from Kabale City.
 
-If it's not working on your development IE 6.0, check that it has
-support for VML which Excanvas is relying on. It appears that some
-stripped down versions used for test environments on virtual machines
-lack the VML support.
-
-You can also try using [Flashcanvas][flashcanvas], which uses Flash to
-do the emulation. Although Flash can be a bit slower to load than VML,
-if you've got a lot of points, the Flash version can be much faster
-overall. Flot contains some wrapper code for activating Excanvas which
-Flashcanvas is compatible with.
-
-You need at least jQuery 1.2.6, but try at least 1.3.2 for interactive
-charts because of performance improvements in event handling.
-
-
-## Basic usage ##
-
-Create a placeholder div to put the graph in:
-
-```html
-<div id="placeholder"></div>
-```
-
-You need to set the width and height of this div, otherwise the plot
-library doesn't know how to scale the graph. You can do it inline like
-this:
-
-```html
-<div id="placeholder" style="width:600px;height:300px"></div>
-```
-
-You can also do it with an external stylesheet. Make sure that the
-placeholder isn't within something with a display:none CSS property -
-in that case, Flot has trouble measuring label dimensions which
-results in garbled looks and might have trouble measuring the
-placeholder dimensions which is fatal (it'll throw an exception).
-
-Then when the div is ready in the DOM, which is usually on document
-ready, run the plot function:
-
-```js
-$.plot($("#placeholder"), data, options);
-```
-
-Here, data is an array of data series and options is an object with
-settings if you want to customize the plot. Take a look at the
-examples for some ideas of what to put in or look at the reference
-in the file `API.txt`. Here's a quick example that'll draw a line from
-(0, 0) to (1, 1):
-
-```js
-$.plot($("#placeholder"), [ [[0, 0], [1, 1]] ], { yaxis: { max: 1 } });
-```
-
-The plot function immediately draws the chart and then returns a plot
-object with a couple of methods.
-
-
-## What's with the name? ##
-
-First: it's pronounced with a short o, like "plot". Not like "flawed".
-
-So "Flot" rhymes with "plot".
-
-And if you look up "flot" in a Danish-to-English dictionary, some of
-the words that come up are "good-looking", "attractive", "stylish",
-"smart", "impressive", "extravagant". One of the main goals with Flot
-is pretty looks.
-
-
-## Notes about the examples ##
-
-In order to have a useful, functional example of time-series plots using time
-zones, date.js from [timezone-js][timezone-js] (released under the Apache 2.0
-license) and the [Olson][olson] time zone database (released to the public
-domain) have been included in the examples directory.  They are used in
-examples/axes-time-zones/index.html.
-
-
-[excanvas]: http://code.google.com/p/explorercanvas/
-[flashcanvas]: http://code.google.com/p/flashcanvas/
-[timezone-js]: https://github.com/mde/timezone-js
-[olson]: ftp://ftp.iana.org/tz/
