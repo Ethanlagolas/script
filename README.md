@@ -58,6 +58,6 @@ DB_PASSWORD=yourpassword
 DB_NAME=elearning
 JWT_SECRET=your_jwt_secret_key
 
-### What was updated:
+### Updated:
 - The **Acknowledgments** section now includes the design credit for **Derrick Abaho**, a second-year student from Kabale City.
 
