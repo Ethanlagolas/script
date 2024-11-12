@@ -1,4 +1,4 @@
- Kabale University eLearning Platform
+ Kabale University e-Learning Platform
 
 ## Overview
 The **Kabale University eLearning Platform** is an online learning management system designed to provide students and faculty with an intuitive platform to engage in virtual learning. The platform supports online course management, content sharing, student assessments, communication tools, and more. It aims to improve access to education, particularly for students at Kabale University and beyond, by offering a user-friendly environment for learning and teaching.
